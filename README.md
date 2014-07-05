@@ -4,7 +4,8 @@ need specification require file phing/Task.php
 
 example in build.xml
 
-```&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+```xml
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;project name="FtpDownUp" basedir="." default="download"&gt;
 &lt;taskdef name="ftpdownload" classname="ftpdownload"/&gt;
 &lt;taskdef name="ftpupload" classname="ftpupload"/&gt;
@@ -17,4 +18,5 @@ example in build.xml
     &lt;ftpupload url="ftp://user:pass@ftpserver/path" localdir="./dirToCopy" /&gt;
 &lt;/target&gt;
 
-&lt;/project&gt;```
+&lt;/project&gt;
+```
