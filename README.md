@@ -4,17 +4,17 @@ need specification require file phing/Task.php
 
 example in build.xml
 
-```<?xml version="1.0" encoding="UTF-8"?>
-<project name="FtpDownUp" basedir="." default="download">
-<taskdef name="ftpdownload" classname="ftpdownload"/>
-<taskdef name="ftpupload" classname="ftpupload"/>
+```&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;project name="FtpDownUp" basedir="." default="download"&gt;
+&lt;taskdef name="ftpdownload" classname="ftpdownload"/&gt;
+&lt;taskdef name="ftpupload" classname="ftpupload"/&gt;
 
-<target name="download">
-    <ftpdownload url="ftp://user:pass@ftpserver/path" localdir="./dirToCopy" />
-</target>
+&lt;target name="download"&gt;
+    &lt;ftpdownload url="ftp://user:pass@ftpserver/path" localdir="./dirToCopy" /&gt;
+&lt;/target&gt;
 
-<target name="upload">
-    <ftpupload url="ftp://user:pass@ftpserver/path" localdir="./dirToCopy" />
-</target>
+&lt;target name="upload"&gt;
+    &lt;ftpupload url="ftp://user:pass@ftpserver/path" localdir="./dirToCopy" /&gt;
+&lt;/target&gt;
 
-</project>```
+&lt;/project&gt;```
